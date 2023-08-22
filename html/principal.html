@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Juego De Ahorcado</h1>
     <!-- Aqui val el stickman-->
     <div id="stickman">
+        <div id="image4" class="hide">
+            <svg width="200" height="250">
+                <!-- Aquí ira la base de del poste-->
+                <line x1="10" y1="240" x2="190" y2="240" stroke="black" stroke-width="4"></line>
+                <!--Aquí irá el poste-->
+                <line x1="20" y1="350" x2="190" y2="240" stroke="black" stroke-width="4"></line>
+            </svg>
+        </div>
 
     </div>
     
@@ -17,7 +26,7 @@
 
     </div>
 
-    <div id="tecladoTil">
+    <div class="tecladoTil">
         <button class="teclado">á</button>
         <button class="teclado">é</button>
         <button class="teclado">í</button>
