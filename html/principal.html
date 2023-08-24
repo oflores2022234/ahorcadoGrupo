@@ -142,82 +142,22 @@
             </svg>
         </div>
     </div>
-    
-    <!-- Aqui va los campos de texto-->
-    <div id="text">
-
+    <div class="flex-row" id="turnos">
+        <div class="col">
+            <h3>Intentos restantes: <span id="intentos">7</span></h3>
+        </div>
+        <div class="col">
+            <button onclick="inicio()" id="reset">Elegir otra palabra</button>
+            <span id="hueco-pista"></span>
+        </div>
     </div>
-
-    <div class="tecladoTil">
-        <button class="teclado">á</button>
-        <button class="teclado">é</button>
-        <button class="teclado">í</button>
-        <button class="teclado">ó</button>
-        <button class="teclado">ú</button>
+    <div class="flex-row">
+        <div class="col">
+            <div class="flex-row" id="abcdario">
+            </div>
+        </div>
+        <div class="col"></div>
     </div>
-
-    <!-- Aqui val el teclado-->
-    <div id="tecladoMin">
-        <button class="teclado">a</button>
-        <button class="teclado">b</button>
-        <button class="teclado">c</button>
-        <button class="teclado">d</button>
-        <button class="teclado">e</button>
-        <button class="teclado">f</button>
-        <button class="teclado">g</button>
-        <button class="teclado">h</button>
-        <button class="teclado">i</button>
-        <button class="teclado">j</button>
-        <button class="teclado">k</button>
-        <button class="teclado">l</button>
-        <button class="teclado">m</button>
-        <button class="teclado">n</button>
-        <button class="teclado">ñ</button>
-        <button class="teclado">o</button>
-        <button class="teclado">p</button>
-        <button class="teclado">q</button>
-        <button class="teclado">r</button>
-        <button class="teclado">s</button>
-        <button class="teclado">t</button>
-        <button class="teclado">u</button>
-        <button class="teclado">v</button>
-        <button class="teclado">w</button>
-        <button class="teclado">x</button>
-        <button class="teclado">y</button>
-        <button class="teclado">z</button>
-    </div>
-
-    <div id="tecladoMay">
-        <button class="teclado">A</button>
-        <button class="teclado">B</button>
-        <button class="teclado">C</button>
-        <button class="teclado">D</button>
-        <button class="teclado">E</button>
-        <button class="teclado">F</button>
-        <button class="teclado">F</button>
-        <button class="teclado">H</button>
-        <button class="teclado">I</button>
-        <button class="teclado">J</button>
-        <button class="teclado">K</button>
-        <button class="teclado">L</button>
-        <button class="teclado">M</button>
-        <button class="teclado">N</button>
-        <button class="teclado">Ñ</button>
-        <button class="teclado">O</button>
-        <button class="teclado">P</button>
-        <button class="teclado">Q</button>
-        <button class="teclado">R</button>
-        <button class="teclado">S</button>
-        <button class="teclado">T</button>
-        <button class="teclado">U</button>
-        <button class="teclado">B</button>
-        <button class="teclado">W</button>
-        <button class="teclado">X</button>
-        <button class="teclado">Y</button>
-        <button class="teclado">Z</button>
-    </div>
-
-    
-
+    <script src="ahorcado.js"></script>
 </body>
 </html>
