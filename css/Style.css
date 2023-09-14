@@ -1,60 +1,170 @@
+
 * {
     box-sizing: border-box;
-}
-
-.main-container{
-    max-width: 800;
+  }
+  
+  .main-container {
+    max-width: 800px;
     margin: auto;
-}
-
-h1.titulo{
-    margin: 50px auto 50px 80px auto;
+  }
+  
+  h1.titulo {
+    margin: 50px auto 80px auto;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-}
-
-h1#msg-final{
+  }
+  
+  h1#msg-final {
     text-align: center;
     color: crimson;
     transition: all .5s ease;
     transform: scale(0);
     min-height: 50px;
     margin-bottom: 0;
-}
-
-.zoom-in {
+  }
+  
+  
+  
+  .zoom-in {
     transform: scale(1) !important;
-}
-
-#acierto {
+  }
+  
+  #acierto {
     text-align: center;
     min-height: 24px;
     transform: scale(0);
-}
+  }
   
-.acierto {
+  .acierto {
     animation: zoomInOut 1s ease;
-}
+  }
   
-.rojo {
+  .rojo {
     color: red;
-}
-
-.verde{
-    color: green
-}
-
-@keyframes zoomInOut {
+  }
+  
+  .verde {
+    color: green;
+  }
+  
+  @keyframes zoomInOut {
     0% { transform: scale(0); }
     50% { transform: scale(1); }
     70% { transform: scale(1); }
     100% { transform: scale(0); }
-}
-
-h2.palabra {
-    margin: 0 auto 25px auto;
+  }
+  
+  h2.palabra {
+    margin: 0 auto 30 auto;
     text-align: center;
-    color: rgb(65, 225, 73);
+    color: black;
     text-transform: uppercase;
     letter-spacing: 6px;
   }
+  
+  .flex-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px auto; 
+  }
+  
+  .no-wrap {
+    flex-wrap: nowrap !important;
+  }
+  
+  .col {
+    width: 50%;
+    text-align: center;
+  }
+  
+  
+  #turnos h3 {
+    margin: auto;
+  }
+  
+  h3 span {
+     color: orangered;
+  }
+  
+  .letra:disabled {
+    color:rgba(81, 180, 134, 0.5);
+  }
+  
+  picture {
+    position: relative;
+  }
+  
+  
+  
+  .fade-in {
+    opacity: 1 !important;
+  }
+  .encuadre {
+    border: 2px dashed crimson;
+    padding: 3px 2px 2px 6px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #corazones {
+  margin: 10px auto;
+}
+
+.corazon {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+/* Estilo para los botones del teclado */
+.letra {
+  background-color: black; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 18px; /* Tamaño de fuente */
+  padding: 10px 15px; /* Espacio interno (arriba y abajo, izquierda y derecha) */
+  margin: 5px; /* Margen entre botones */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cursor al pasar por encima */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+.letra:hover {
+  background-color: #45a049; /* Color de fondo al pasar el cursor por encima */
+}
+
+/* Estilo para los botones deshabilitados */
+.letra:disabled {
+  background-color: #ccc; /* Color de fondo para botones deshabilitados */
+  color: #666; /* Color de texto para botones deshabilitados */
+  cursor: not-allowed; /* Cursor no disponible para botones deshabilitados */
+}
+
+#btn-reset {
+  background-color: #f44336; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 18px; /* Tamaño de fuente */
+  padding: 10px 15px; /* Espacio interno (arriba y abajo, izquierda y derecha) */
+  margin: 10px 0; /* Margen superior e inferior, sin margen izquierdo y derecho */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+#btn-reset:hover {
+  background-color: #d32f2f; /* Color de fondo al pasar el cursor por encima */
+}
+
+
+
+
